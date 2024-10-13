@@ -1,0 +1,21 @@
+services:
+  testapi:
+    image: ${DOCKER_REGISTRY-}testapi
+    build:
+      context: .
+      dockerfile: TestApi/Dockerfile
+
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: TEST
+    volumes:
+    - ./database/:/docker-entrypoint-initdb.d/
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 9000:8080
