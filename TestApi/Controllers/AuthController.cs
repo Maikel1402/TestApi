@@ -16,13 +16,15 @@ namespace TestApi.Controllers
         }
         [AllowAnonymous]
         [HttpPost("Authenticate")]
-        public IActionResult Login([FromBody] UserCredential userCredential)
+        public async Task<IActionResult> Login([FromBody] UserCredential userCredential)
         {
-          
-                var token = _jwtTokenManager.Authenticate(userCredential.User, userCredential.PassWord);
-                return Ok(token);
-            }
-       
+
+            var token = await _jwtTokenManager.Authenticate(userCredential.User, userCredential.PassWord);
+            if (token == "Ivalid User") return BadRequest("Usuario No válido");
+
+            return Ok(token);
         }
+
     }
+}
 

@@ -76,6 +76,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IProductInterface,ProductServices>();
 builder.Services.AddScoped<IJwtTokenManager,JwtTokenManager>();
+builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<CreateProductValidator>();
 builder.Services.AddScoped<UpdateProductValidator>();
 builder.Services.AddScoped<DeleteProductValidator>();

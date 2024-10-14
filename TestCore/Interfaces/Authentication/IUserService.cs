@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestCore.Dto.Request;
 
 namespace TestCore.Interfaces.Authentication
 {
-    public interface IJwtTokenManager
+    public interface IUserService
     {
-        Task<string> Authenticate(string userName, string password);
+        Task<bool> IsValidUser(UserCredential userCredential);
     }
 }
