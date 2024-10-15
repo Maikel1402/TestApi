@@ -6,8 +6,8 @@ namespace TestCore.Validator.ProductValidator
 {
     public class UpdateProductValidator : AbstractValidator<ProductRequest>
     {
-        private readonly IProductInterface _productInterface;
-        public UpdateProductValidator(IProductInterface productInterface) {
+        private readonly IProductService _productInterface;
+        public UpdateProductValidator(IProductService productInterface) {
                 
             _productInterface = productInterface;
 

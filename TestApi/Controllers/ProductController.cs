@@ -11,12 +11,12 @@ namespace TestApi.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private IProductInterface _productInterface;
+        private IProductService _productInterface;
         private CreateProductValidator _productValidator;
         private UpdateProductValidator _updateProductValidator;
         private DeleteProductValidator _deleteProductValidator;
 
-        public ProductController(IProductInterface productInterface, CreateProductValidator productValidator, UpdateProductValidator updateProductValidator
+        public ProductController(IProductService productInterface, CreateProductValidator productValidator, UpdateProductValidator updateProductValidator
             ,DeleteProductValidator deleteProductValidator)
         {
             _productInterface = productInterface;

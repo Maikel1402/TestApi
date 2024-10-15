@@ -6,8 +6,8 @@ namespace TestCore.Validator.ProductValidator
 {
     public class DeleteProductValidator : AbstractValidator<ProductRequest>
     {
-        private readonly IProductInterface _productInterface;
-        public DeleteProductValidator(IProductInterface productInterface) {
+        private readonly IProductService _productInterface;
+        public DeleteProductValidator(IProductService productInterface) {
                 
             _productInterface = productInterface;
 

@@ -3,7 +3,7 @@ using TestCore.Dto.Request;
 
 namespace TestCore.Interfaces
 {
-    public interface IProductInterface
+    public interface IProductService
     {
         Task Create(CreateProductRequest productDto);
         Task Update(ProductRequest productDto);

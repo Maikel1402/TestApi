@@ -7,7 +7,7 @@ using TestData.Entities;
 
 namespace TestCore.Services
 {
-    public class ProductServices : IProductInterface
+    public class ProductServices : IProductService
     {
         private readonly ApplicationDbContext _applicationDbContext;
 

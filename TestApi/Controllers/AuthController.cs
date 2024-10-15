@@ -20,7 +20,7 @@ namespace TestApi.Controllers
         {
 
             var token = await _jwtTokenManager.Authenticate(userCredential.User, userCredential.PassWord);
-            if (token == "Ivalid User") return BadRequest("Usuario No válido");
+            if (token == "Ivalid User") return Unauthorized("Usuario No válido");
 
             return Ok(token);
         }
