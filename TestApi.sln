@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApi", "TestApi\TestApi.csproj", "{CDD700BE-BF8A-4D96-B502-972568342A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApi", "TestApi\TestApi.csproj", "{CDD700BE-BF8A-4D96-B502-972568342A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCore", "TestCore\TestCore.csproj", "{29423419-F620-4127-9568-C0860C8E5402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCore", "TestCore\TestCore.csproj", "{29423419-F620-4127-9568-C0860C8E5402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestData", "TestData\TestData.csproj", "{80119740-BBFE-4FD0-81F2-7E94EFD84AB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestData", "TestData\TestData.csproj", "{80119740-BBFE-4FD0-81F2-7E94EFD84AB5}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2BDDBEC4-A322-4C80-8271-3E3E97D703CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApiTest", "..\TestApiTest\TestApiTest.csproj", "{5F333A81-2BE0-46E1-B419-5FA638515F37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2BDDBEC4-A322-4C80-8271-3E3E97D703CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BDDBEC4-A322-4C80-8271-3E3E97D703CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BDDBEC4-A322-4C80-8271-3E3E97D703CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F333A81-2BE0-46E1-B419-5FA638515F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F333A81-2BE0-46E1-B419-5FA638515F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F333A81-2BE0-46E1-B419-5FA638515F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F333A81-2BE0-46E1-B419-5FA638515F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,6 +36,7 @@ namespace TestApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var product = await _productInterface.GetProductById(id);
+            if (product == null) return NoContent();
             return Ok(product);
         }
         [HttpPost]
